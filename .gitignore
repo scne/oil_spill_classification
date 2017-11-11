@@ -52,22 +52,18 @@ __pycache__/
 
 # C extensions
 *.so
-<<<<<<< HEAD
 
 # Distribution / packaging
 .Python
 env/
-=======
 *.png
 *.h5
 
 # Distribution / packaging
-.Python
 src/deep/tensorboard
 src/nn/tensorboard
 src/uns_deep/tensorboard
 .idea
->>>>>>> cfde43e172e6215cab5119c71ee8afdfa7db0cc3
 build/
 develop-eggs/
 dist/
@@ -83,10 +79,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-<<<<<<< HEAD
-=======
 MANIFEST
->>>>>>> cfde43e172e6215cab5119c71ee8afdfa7db0cc3
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -106,11 +99,7 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
-<<<<<<< HEAD
 *,cover
-=======
-*.cover
->>>>>>> cfde43e172e6215cab5119c71ee8afdfa7db0cc3
 .hypothesis/
 
 # Translations
@@ -119,11 +108,8 @@ coverage.xml
 
 # Django stuff:
 *.log
-<<<<<<< HEAD
-=======
 .static_storage/
 .media/
->>>>>>> cfde43e172e6215cab5119c71ee8afdfa7db0cc3
 local_settings.py
 
 # Flask stuff:
@@ -151,7 +137,6 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
-<<<<<<< HEAD
 # dotenv
 .env
 
@@ -170,31 +155,11 @@ ENV/
 /pip-selfcheck.json
 /src/deep/board/
 /src/deep/model/
-=======
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
 env.bak/
 venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
 # mkdocs documentation
 /site
 
 # mypy
 .mypy_cache/
-
-/bin/
-/include/
 /share/
-/pip-selfcheck.json
->>>>>>> cfde43e172e6215cab5119c71ee8afdfa7db0cc3
