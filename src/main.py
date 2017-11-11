@@ -8,7 +8,7 @@ deep = './deep'
 uns_deep = './uns_deep'
 
 
-def _print_menu ():
+def _print_menu():
     print('== MENU Classification OilSpill ==')
     print('----------------------------------')
     print('1 - Neural Network')
