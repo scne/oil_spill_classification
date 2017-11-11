@@ -47,7 +47,6 @@ num_test = len(X_test)
 num_classes = np.unique(y_train).shape[0] # there are 10 image classes
 
 
-print("ciaoooo")
 # Y_train = _one_hot_label(y_train)
 Y_train = np_utils.to_categorical(y_train, num_classes) # One-hot encode the labels
 Y_test = np_utils.to_categorical(y_test, num_classes) # One-hot encode the labels

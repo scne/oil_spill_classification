@@ -341,16 +341,6 @@ class Network:
         print('\n', np.sum(confusionMatrix), a)
 
     def put_kernels_on_grid(self, kernel, pad=1):
-
-        '''Visualize conv. filters as an image (mostly for the 1st layer).
-        Arranges filters into a grid, with some paddings between adjacent filters.
-        Args:
-          kernel:            tensor of shape [Y, X, NumChannels, NumKernels]
-          pad:               number of black pixels around each filter (between them)
-        Return:
-          Tensor of shape [1, (Y+2*pad)*grid_Y, (X+2*pad)*grid_X, NumChannels].
-        '''
-
         # get shape of the grid. NumKernels == grid_Y * grid_X
         def factorization(n):
             for i in range(int(sqrt(float(n))), 0, -1):
