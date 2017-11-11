@@ -139,3 +139,5 @@ ENV/
 /include/
 /bin/
 /pip-selfcheck.json
+/src/deep/board/
+/src/deep/model/
