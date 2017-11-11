@@ -2,256 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f3ede33-14e0-42ce-8564-2298688f6a4b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509376932.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509377078.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509379663.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509380195.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509380358.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509380507.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509380716.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509380763.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509381414.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509381476.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509382197.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509382317.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509382346.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509382457.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509382543.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509384032.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509384223.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509384250.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509384355.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509384384.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509384469.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509384757.claudio" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509440209.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509441304.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509441407.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509446064.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509448938.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509450754.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509450962.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509640398.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509640592.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board/events.out.tfevents.1509641143.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510051766.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510052918.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510052968.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510053014.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510053112.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510053425.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510053533.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510053642.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510053716.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510053835.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510053932.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510054090.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510054210.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510054601.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510054719.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510055024.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510055134.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510055180.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510055246.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510055309.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510055410.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510055506.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510055615.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510055676.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510055731.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510062216.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510063567.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510063831.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510069864.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510070024.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510070154.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510070270.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510070315.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510070342.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510070382.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510070430.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510070469.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510070878.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510070987.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510071462.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510072371.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510072409.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510072429.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510072623.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510073035.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510073078.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510073112.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510073154.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510073240.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510073262.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510073306.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510073332.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510073365.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510128822.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510130008.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510130796.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510131184.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510131403.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510132658.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510132912.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510133153.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510133460.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510134263.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510134934.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510135147.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510135332.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510135632.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510136123.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510136644.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510217302.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510217620.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510217724.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510217874.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510217937.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510217985.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510218303.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510218382.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510218401.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510218442.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510218497.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510218569.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510218628.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510218685.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510218750.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510218817.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510218939.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510222720.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510222918.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510240857.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510241044.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/board2/events.out.tfevents.1510241253.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/board2/events.out.tfevents.1510139158.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/board2/events.out.tfevents.1510139186.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/board2/events.out.tfevents.1510139776.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/board2/events.out.tfevents.1510139800.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/board2/events.out.tfevents.1510139908.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/board2/events.out.tfevents.1510139963.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/board2/events.out.tfevents.1510139986.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/board2/events.out.tfevents.1510140014.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/board2/events.out.tfevents.1510140137.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509726410.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509726641.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509726704.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509727167.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509727547.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509727723.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509727929.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509728280.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509728379.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509728474.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509728554.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509800491.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509899634.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509899719.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509954301.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509954449.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509954641.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509954767.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509954924.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509954951.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509955078.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509955631.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509955765.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509957207.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509958333.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509958454.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509958621.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509958779.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509959195.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509959196.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509959712.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509959817.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509959944.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509960082.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509960397.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509961216.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509971054.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509971258.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509976291.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509976663.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509985830.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509986047.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509986149.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board/autoencoder/events.out.tfevents.1509986419.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510219225.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510219261.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510222548.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510234130.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510234199.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510234280.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510234315.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510234417.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510234597.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510235126.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510236454.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510236548.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510236960.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510237023.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510237165.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510237297.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510237981.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510238502.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510238619.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510238718.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510238919.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510238956.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510239032.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510239153.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510239338.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510239451.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510239632.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510239709.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510239833.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510240051.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510240091.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510240295.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510240391.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510240491.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510240619.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510240733.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510244753.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510244860.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510244961.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510245074.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510245176.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510245246.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510245621.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510245780.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510245944.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510246051.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510246197.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510246406.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510246475.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510246776.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510246886.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510247001.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510247051.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510247144.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510247342.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510247475.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510247526.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510247634.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510247895.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510248007.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510248411.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510248475.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510248777.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510248825.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510318917.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510319233.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510319281.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510319364.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510319632.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510320009.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510320010.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510320066.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510320277.mariano-Lenovo-Z50-70" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/board2/events.out.tfevents.1510320342.mariano-Lenovo-Z50-70" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/dp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deep/main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/checkpoint" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/eval/events.out.tfevents.1509372715.claudio" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/eval/events.out.tfevents.1509373966.claudio" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/events.out.tfevents.1509372712.claudio" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/events.out.tfevents.1509373960.claudio" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/graph.pbtxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/model.ckpt-1.data-00000-of-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/model.ckpt-1.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/model.ckpt-1.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/model.ckpt-2000.data-00000-of-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/model.ckpt-2000.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/model.ckpt-2000.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/model.ckpt-2001.data-00000-of-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/model.ckpt-2001.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/model.ckpt-2001.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/model.ckpt-4000.data-00000-of-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/model.ckpt-4000.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nn/model/oil_nn_model/model.ckpt-4000.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/DEC-Keras-master.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/keras_dec/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/keras_dec/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/keras_dec/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/keras_dec/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/keras_dec/keras_dec.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/kmeans.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/test_autoencoder_dense.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/uns_deep/uns_keras.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pip-selfcheck.json" afterPath="$PROJECT_DIR$/pip-selfcheck.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/deep/deep_keras_conv.py" afterPath="$PROJECT_DIR$/src/deep/deep_keras_conv.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nn/keras_nn.py" afterPath="$PROJECT_DIR$/src/nn/keras_nn.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -263,10 +49,10 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Test_dpp_py$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1509624393110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/uns_deep" />
     <SUITE FILE_PATH="coverage/Test_dpp_py$create_dataset.coverage" NAME="create_dataset Coverage Results" MODIFIED="1509642270060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/deep" />
-    <SUITE FILE_PATH="coverage/Test_dpp_py$test_autoencoder_dense.coverage" NAME="test_autoencoder_dense Coverage Results" MODIFIED="1510320335546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/uns_deep" />
+    <SUITE FILE_PATH="coverage/Test_dpp_py$test_autoencoder_dense.coverage" NAME="test_autoencoder_dense Coverage Results" MODIFIED="1510328464037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/uns_deep" />
     <SUITE FILE_PATH="coverage/Test_dpp_py$kmeans.coverage" NAME="kmeans Coverage Results" MODIFIED="1509813923900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/uns_deep" />
-    <SUITE FILE_PATH="coverage/Test_dpp_py$main.coverage" NAME="main Coverage Results" MODIFIED="1509642245891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/deep" />
     <SUITE FILE_PATH="coverage/Test_dpp_py$uns_keras.coverage" NAME="uns_keras Coverage Results" MODIFIED="1509986411572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/uns_deep" />
+    <SUITE FILE_PATH="coverage/Test_dpp_py$main.coverage" NAME="main Coverage Results" MODIFIED="1510423887767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Test_dpp_py$deep_keras.coverage" NAME="deep_keras Coverage Results" MODIFIED="1510128799710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/deep" />
     <SUITE FILE_PATH="coverage/Test_dpp_py$deep_keras_conv.coverage" NAME="deep_keras_conv Coverage Results" MODIFIED="1510241237229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/deep" />
     <SUITE FILE_PATH="coverage/Test_dpp_py$deep_keras_dense.coverage" NAME="deep_keras_dense Coverage Results" MODIFIED="1510241247191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/deep" />
@@ -277,44 +63,10 @@
       <file leaf-file-name="keras_nn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nn/keras_nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="127" column="68" lean-forward="false" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="68" />
+            <state relative-caret-position="-136">
+              <caret line="81" column="18" lean-forward="false" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
               <folding>
-                <element signature="e#0#101#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deep_keras_dense.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/deep/deep_keras_dense.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1314">
-              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="98" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#101#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deep_keras_conv.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/deep/deep_keras_conv.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_autoencoder_dense.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uns_deep/test_autoencoder_dense.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2556">
-              <caret line="142" column="53" lean-forward="false" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#82#0" expanded="true" />
+                <element signature="e#19#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -323,18 +75,74 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/python3.5/codecs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name="autoencoder_dense.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/uns_deep/autoencoder_dense.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#19#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deep_keras_conv.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/deep/deep_keras_conv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="72" column="18" lean-forward="false" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+              <folding>
+                <element signature="e#19#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deep_keras_dense.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/deep/deep_keras_dense.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="net.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nn/net.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="602">
+              <caret line="46" column="30" lean-forward="false" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1489">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="234">
+              <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -365,6 +173,10 @@
       <find>dense_1</find>
       <find>shapes</find>
       <find>board</find>
+      <find>42</find>
+      <find>path_thebest</find>
+      <find>path_best</find>
+      <find>labels</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -382,12 +194,13 @@
         <option value="$PROJECT_DIR$/src/uns_deep/uns_keras.py" />
         <option value="$PROJECT_DIR$/src/deep/deep_keras.py" />
         <option value="$PROJECT_DIR$/src/deep/create_dataset.py" />
-        <option value="$PROJECT_DIR$/src/deep/deep_keras_conv.py" />
         <option value="$PROJECT_DIR$/src/deep/deep_keras_dense.py" />
-        <option value="$PROJECT_DIR$/src/nn/keras_nn.py" />
         <option value="$PROJECT_DIR$/src/uns_deep/test_autoencoder_dense.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/deep/deep_keras_conv.py" />
+        <option value="$PROJECT_DIR$/src/nn/keras_nn.py" />
+        <option value="$PROJECT_DIR$/src/uns_deep/autoencoder_dense.py" />
       </list>
     </option>
   </component>
@@ -458,8 +271,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -484,26 +295,52 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="nn" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Test_dpp_py" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Test_dpp_py" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="uns_deep" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
   </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="Test_dpp_py" is-module-sdk="true" working-directory="$PROJECT_DIR$">
+        <envs>
+          <env key="TERM" value="xterm-color" />
+        </envs>
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="Test_dpp_py" />
+        <option name="myEnvs">
+          <map>
+            <entry key="TERM" value="xterm-color" />
+          </map>
+        </option>
+        <option name="myWorkingDirectory" value="$PROJECT_DIR$" />
+      </console-settings>
+    </option>
+  </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/nn" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/deep/best_model" />
       <recent name="$PROJECT_DIR$/src/deep" />
       <recent name="$PROJECT_DIR$/src/uns_deep" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/uns_deep" />
+      <recent name="$PROJECT_DIR$/src/nn" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -518,25 +355,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_autoencoder_dense">
-    <configuration name="deep_keras" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/deep" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Test_dpp_py" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/deep/deep_keras.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.main">
     <configuration name="deep_keras_conv" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -591,6 +410,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Test_dpp_py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="test_autoencoder_dense" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -610,19 +447,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.deep_keras" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test_autoencoder_dense" />
-      <item index="2" class="java.lang.String" itemvalue="Python.deep_keras_conv" />
-      <item index="3" class="java.lang.String" itemvalue="Python.keras_nn" />
-      <item index="4" class="java.lang.String" itemvalue="Python.deep_keras_dense" />
+      <item index="0" class="java.lang.String" itemvalue="Python.test_autoencoder_dense" />
+      <item index="1" class="java.lang.String" itemvalue="Python.deep_keras_conv" />
+      <item index="2" class="java.lang.String" itemvalue="Python.keras_nn" />
+      <item index="3" class="java.lang.String" itemvalue="Python.deep_keras_dense" />
+      <item index="4" class="java.lang.String" itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test_autoencoder_dense" />
-        <item index="1" class="java.lang.String" itemvalue="Python.keras_nn" />
-        <item index="2" class="java.lang.String" itemvalue="Python.deep_keras_dense" />
-        <item index="3" class="java.lang.String" itemvalue="Python.deep_keras_conv" />
-        <item index="4" class="java.lang.String" itemvalue="Python.deep_keras" />
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test_autoencoder_dense" />
+        <item index="2" class="java.lang.String" itemvalue="Python.keras_nn" />
+        <item index="3" class="java.lang.String" itemvalue="Python.deep_keras_dense" />
+        <item index="4" class="java.lang.String" itemvalue="Python.deep_keras_conv" />
       </list>
     </recent_temporary>
   </component>
@@ -630,7 +467,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -646,17 +483,17 @@
     <frame x="0" y="27" width="1920" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13087606" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22115384" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5053419" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.4946581" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.4946581" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42468855" sideWeight="0.49358973" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3567384" sideWeight="0.49358973" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990981" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398641" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32158118" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -711,33 +548,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/uns_deep/main.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/uns_deep/kmeans.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/uns_deep/uns_keras.py</url>
-          <line>118</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/uns_deep/test_autoencoder_dense.py</url>
-          <line>160</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/uns_deep/test_autoencoder_dense.py</url>
-          <line>138</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -745,51 +555,16 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="47" />
+      <option name="time" value="57" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/python3.5/site-packages/tensorflow/python/framework/common_shapes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="658" column="0" lean-forward="false" selection-start-line="658" selection-start-column="0" selection-end-line="658" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/python3.5/site-packages/numpy/lib/type_check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="479" column="0" lean-forward="false" selection-start-line="479" selection-start-column="0" selection-end-line="479" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="1025" column="0" lean-forward="false" selection-start-line="1025" selection-start-column="0" selection-end-line="1025" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/deep/dp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="187" column="56" lean-forward="false" selection-start-line="187" selection-start-column="51" selection-end-line="187" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/deep/utility.py" />
-    <entry file="file://$PROJECT_DIR$/lib/python3.5/site-packages/keras/utils/np_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/python3.5/site-packages/keras/engine/training.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="286" column="0" lean-forward="false" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -818,26 +593,6 @@
     <entry file="file://$PROJECT_DIR$/src/uns_deep/keras/im0/22.png" />
     <entry file="file://$PROJECT_DIR$/src/uns_deep/keras/im0/24.png" />
     <entry file="file://$PROJECT_DIR$/src/uns_deep/keras/im0/23.png" />
-    <entry file="file://$PROJECT_DIR$/src/uns_deep/kmeans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uns_deep/uns_keras.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
-          <caret line="56" column="81" lean-forward="false" selection-start-line="56" selection-start-column="81" selection-end-line="56" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/uns_deep/create_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -846,13 +601,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/deep/deep_keras.py" />
-    <entry file="file://$PROJECT_DIR$/src/deep/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-558">
-          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/python3.5/site-packages/keras/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="863">
@@ -892,23 +640,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="40" column="60" lean-forward="false" selection-start-line="38" selection-start-column="3" selection-end-line="40" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nn/net.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="46" column="30" lean-forward="false" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nn/keras_nn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="127" column="68" lean-forward="false" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="68" />
           <folding>
-            <element signature="e#0#101#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uns_deep/test_autoencoder_dense.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="894">
+          <caret line="166" column="14" lean-forward="true" selection-start-line="166" selection-start-column="14" selection-end-line="166" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -916,38 +658,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/deep/deep_keras_conv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/deep/deep_keras_dense.py">
+    <entry file="file://$PROJECT_DIR$/src/deep/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="98" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#101#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uns_deep/test_autoencoder_dense.py">
+    <entry file="file://$PROJECT_DIR$/src/deep/dp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2556">
-          <caret line="142" column="53" lean-forward="false" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#82#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="792">
+          <caret line="187" column="56" lean-forward="false" selection-start-line="187" selection-start-column="51" selection-end-line="187" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
+    <entry file="file://$PROJECT_DIR$/src/nn/net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="46" column="30" lean-forward="false" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uns_deep/crop_c/0/crop_2_11.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uns_deep/crop_c/0/crop_2_12.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uns_deep/crop_c/0/crop_2_14.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uns_deep/uns_keras.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="56" column="81" lean-forward="false" selection-start-line="56" selection-start-column="81" selection-end-line="56" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uns_deep/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -955,11 +717,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/uns_deep/kmeans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep/deep_keras_dense.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1489">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="234">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep/deep_keras_conv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="72" column="18" lean-forward="false" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+          <folding>
+            <element signature="e#19#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nn/keras_nn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="81" column="18" lean-forward="false" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+          <folding>
+            <element signature="e#19#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uns_deep/autoencoder_dense.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#19#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

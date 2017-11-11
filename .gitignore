@@ -11,6 +11,9 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+src/deep/tensorboard
+src/nn/tensorboard
+src/uns_deep/tensorboard
 build/
 develop-eggs/
 dist/
