@@ -1,6 +1,7 @@
 #librerie standard
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 #librerie keras
 from keras.models import Model
 from keras.layers import Input, Convolution2D, MaxPooling2D, Dense, Dropout, Flatten
@@ -15,7 +16,7 @@ from src.deep.create_dataset import _generate_dataset, _load_image, _plot_confus
 
 #PATH PER IL SALVATAGGIO DEI DATI
 path_dataset = './deep/img_cluster' #PERCORSO DOVE SONO SALVATE LE IMMAGINI DI INPUT PER LA RETE
-path_model = './deep/model/model.h5'  #PERCORSO DOVE VIENE SALVATO IL MODELLO DOPO L'ADDESTRAMENTO DELLA RETE
+path_model = './deep/model/'  #PERCORSO DOVE VIENE SALVATO IL MODELLO DOPO L'ADDESTRAMENTO DELLA RETE
 
 #PARAMETRI PER LA CONVOLUTIONAL DEEP NEURAL NETWORK
 batch_size = 64 #quantità di trainig cases elaborati per esecuzione
@@ -44,7 +45,7 @@ def _load_data_cnn():
 
 def _evaluete_cnn(X_train, X_test, Y_train, Y_test):
 
-    model = load_model(path_model)
+    model = load_model(path_model+'model.h5')
 
     model.evaluate(X_test, Y_test, verbose=1, sample_weight=None)  # Evaluate the trained model on the test set!
 
@@ -69,6 +70,8 @@ def _evaluete_cnn(X_train, X_test, Y_train, Y_test):
 
 def _start_cnn ():
     print('STARTING FITTING CONVOLUTIONAL DEEP NEURAL NETWORK')
+    if not os.path.exists(path_model):
+        os.mkdir(path_model)
     X_train, X_test, Y_train, Y_test = _load_data_cnn()
     print('loading data .......')
     #DEFINIZIONE DEL MODELLO DELLA CONVOLUTIONAL DEEP NEURAL NETWORK
@@ -99,7 +102,7 @@ def _start_cnn ():
 
     #SALVO IL MODELLO APPENA ADDESTRATO
     print("Saving model")
-    model.save(path_model, overwrite=True)
+    model.save(path_model+'model.h5', overwrite=True)
     #PASSO ALLA FASE DI VALUTAZIONE DEL MODELLO SUI TEST CASES
     _evaluete_cnn(X_train, X_test, Y_train, Y_test)
     print("The End")

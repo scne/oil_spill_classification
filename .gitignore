@@ -109,3 +109,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+/bin/
+/include/
+/share/

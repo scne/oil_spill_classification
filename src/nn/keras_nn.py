@@ -76,6 +76,8 @@ def _start_nn ():
     if os.path.exists(path_best):
         shutil.rmtree(path_best)
     os.mkdir(path_best)
+    if not os.path.exists(path_thebest):
+        os.mkdir(path_thebest)
 
     X_train, X_test, Y_train, Y_test = _load_data_nn()
 
