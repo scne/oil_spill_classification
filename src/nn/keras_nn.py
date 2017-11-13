@@ -55,7 +55,7 @@ def _evaluete_nn (X_train, X_test, Y_train, Y_test, vect_max=None):
     #CARICO IL MODELLO CON LA MIGLIORE ACCURANCY E VERIFICO L'ANDAMENTO SUI TEST CASES
     print('Load best model and test it ')
     model = load_model(path_best+'checkpoint-%d.h5' %(vect_max))
-    score = model.evaluate(X_train, Y_train, verbose=0) #valuto il modello
+    score = model.evaluate(X_test, Y_test, verbose=0) #valuto il modello
     print('Metrics => ', model.metrics_names, score)
     y_predict = np.asarray(model.predict(X_test, verbose=0))
     Y_predict = np.argmax(y_predict, axis=1)
@@ -99,25 +99,23 @@ def _start_nn ():
 
     #GENERAZIONE DEGLI SPLIT PER L'ADDESTRAMENTO TRAMITE CROSS VALIDATION
     kfold = KFold(n_splits=n_splits, shuffle=True, random_state=seed)
-    vect_max = []
     cvscores = []
     i = 0
 
     #STARTING CROSS VALIDATION
     for train, test in kfold.split(X_train, Y_train):
         model = baseline_model()
-        history = model.fit(X_train[train], Y_train[train], epochs=num_epochs, batch_size=batch_size, verbose=0,
+        model.fit(X_train[train], Y_train[train], epochs=num_epochs, batch_size=batch_size, verbose=0,
                   callbacks=[TensorBoard(log_dir='./nn/tensorboard/'),
-                             ModelCheckpoint(path_best+'checkpoint-%d.h5' %(i), monitor='acc', verbose=1,
+                             ModelCheckpoint(path_best+'checkpoint-%d.h5' %(i), monitor='acc', verbose=0,
                                              save_best_only=True, mode='max'),
                              EarlyStopping(monitor='loss', min_delta=0.001, patience=10, verbose=2, mode='min')])
-        vect_max.append(np.max(history.history.get('acc')))
-        i = i + 1
         scores = model.evaluate(X_train[test], Y_train[test], verbose=2)
         print("%s: %.2f%%" % (model.metrics_names[1], scores[1]*100))
         cvscores.append(scores[1] * 100)
+        i += 1
     print("%.2f%% (+/- %.2f%%)" % (np.mean(cvscores), np.std(cvscores)))
 
     #PASSO ALLA FUNZIONE DI VALUTAZIONE IL MODELLO CHE HA OTTENUTO L'ACCURANCY MIGLIORE TRA QUELLI GENERATI
-    vect_max = np.argmax(vect_max)
+    vect_max = np.argmax(cvscores)
     _evaluete_nn(X_train, X_test, Y_train, Y_test, vect_max)

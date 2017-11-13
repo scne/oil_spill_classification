@@ -114,3 +114,6 @@ venv.bak/
 /include/
 /share/
 /pip-selfcheck.json
+/src/nn/best_model/
+/src/nn/thebetter_model/
+/src/nn/dataset/
