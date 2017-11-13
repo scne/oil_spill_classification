@@ -31,7 +31,7 @@ def _print_menu_nn_evaluete():
     val = input('> ')
     val = int(val)
     X_train, X_test, Y_train, Y_test = _load_data_nn()
-    _evaluete_nn(X_train, X_test, Y_train, Y_test, val)
+    _evaluete_nn(X_test, Y_test, val)
     _print_menu()
 
 

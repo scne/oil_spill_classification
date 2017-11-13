@@ -1,29 +1,36 @@
-import tensorflow as tf
+import itertools
 import os
-import numpy as np
+
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
-import itertools
-
-
-
-def _parse_function(filename, label):
-    image_string = tf.read_file(filename)
-    image_decoded = tf.image.decode_image(image_string)
-    return image_decoded, label
+import numpy as np
 
 
 def _read_image(filename):
-    # image_string = tf.read_file(filename)
-    # image_decoded = tf.image.decode_png(image_string, channels=1)
+    """
+    load image from disk
+    :param filename: path of images
+    :return: image match to file name path
+    """
     return mpimg.imread(filename)
 
+
 def _load_image(filenames):
-    images = [*map(lambda x: np.asarray([_read_image(x)]).reshape((32,32,1)), filenames)]
-    # images = [*map(lambda x: np.asarray(_read_image(x)), filenames)]
+    """
+    load images from and array of path
+    :param filenames: array of file names to load
+    :return: an array of images
+    """
+    images = [*map(lambda x: np.asarray([_read_image(x)]).reshape((32, 32, 1)), filenames)]
     return images
 
+
 def _one_hot_label(labels):
+    """
+    generate an array of one hot labels based on original labels class
+    :param labels: original array of labels
+    :return: one hot array
+    """
     one_hot_labels = []
     for num in labels:
         i = round(num)
@@ -34,6 +41,11 @@ def _one_hot_label(labels):
 
 
 def _iterate_path(path):
+    """
+    iterate path and sub path to generate an two array of images and labels
+    :param path: base path to investigate
+    :return: two array of file names and labels
+    """
     filenames_array = []
     labels_array = []
     for root, dirs, files in os.walk(path):
@@ -45,12 +57,12 @@ def _iterate_path(path):
 
 
 def _generate_dataset(base_path):
+    """
+    produce a dataset for neural network from path
+    :param base_path: base path of dataset images
+    :return: two array with file name and labels
+    """
     filenames_array, labels_array = _iterate_path(base_path)
-    # images = [*map(lambda x: _read_image(x), filenames_array)]
-    # filenames = tf.constant(filenames_array)
-    # labels = tf.constant(labels_array)
-    # dataset = tf.contrib.data.Dataset.from_tensor_slices((filenames, labels))
-    # return dataset.map(_parse_function)
     return filenames_array, labels_array
 
 
@@ -63,13 +75,17 @@ def _extract_class(labels, name_class):
     labels_select[idx] = 1
     return labels_select
 
-def _plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues):
-    # if normalize:
-    #     cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-    #     print("Normalized confusion matrix")
-    # else:
-    #     print('Confusion matrix, without normalization')
 
+def _plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues):
+    """
+    plot confusion matrix
+    :param cm: confusion matrix
+    :param classes: classes of evaluation
+    :param normalize: flag to enable normalization step
+    :param title: title of plot
+    :param cmap: color map
+    :return: a chart of confusion matrix
+    """
     print(cm)
 
     plt.imshow(cm, interpolation='nearest', cmap=cmap)
@@ -89,6 +105,3 @@ def _plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix
     plt.tight_layout()
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
-
-
-# _generate_dataset('/home/claudio/Dropbox/ImageProcessing_project/crop')

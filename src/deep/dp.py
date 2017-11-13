@@ -17,8 +17,8 @@ class Network:
         self.test_batch_size = test_batch_size
 
         # Hyper Parameters
-        self.conv_config = []  # list of dict
-        self.fc_config = []  # list of dict
+        self.conv_config = []
+        self.fc_config = []
         self.conv_weights = []
         self.conv_biases = []
         self.fc_weights = []

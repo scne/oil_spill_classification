@@ -1,35 +1,38 @@
-#librerie standard
-import shutil
+# standard libraries
 import os
+import shutil
+
 import numpy as np
-#librerie keras
-from keras.models import Sequential
-from keras.layers import Dense, Dropout
-from keras.utils import np_utils
-from keras.models import load_model
 from keras.callbacks import TensorBoard, EarlyStopping, ModelCheckpoint
-#liberie sklearn
-from sklearn.model_selection import train_test_split
+from keras.layers import Dense, Dropout
+# keras libraries
+from keras.models import Sequential
+from keras.models import load_model
+from keras.utils import np_utils
 from sklearn import preprocessing
-from sklearn.model_selection import KFold
 from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.model_selection import KFold
+# sklearn libraries
+from sklearn.model_selection import train_test_split
 
+# convolutional network parmas
+path_dataset = './nn/dataset/dataset_total.txt'  # datasetpath
+path_best = './nn/best_model/'  # kfolds model path
+path_thebest = './nn/thebetter_model/'  # bset models path
 
-#PATH PER IL SALVATAGGIO DEI DATI
-path_dataset = './nn/dataset/dataset_total.txt' #PERCORSO DOVE RISIEDE IL DATASET
-path_best = './nn/best_model/' #PERCORSO DOVE VENGONO SALVATI I MODELLI DELLE RETI ADDESTRATE PER TUTTI I KFOLD
-path_thebest = './nn/thebetter_model/' #PERCORSO DOVE VENGONO SALVATE LE RETI CHE HANNO OTTENUTO GLI SCORE MIGLIORI
-                                       #DOPO IL TEST
-#PARAMETRI PER LA RETE NEURALE
-batch_size = 32 #quantità di trainig cases elaborati per esecuzione
-num_epochs = 500 #numero massimo di epoche per la quale la rete può essere addestrata
-num_classes = 3 #numero di classi che dipendo dal dataset di input
-seed = 42 #seme per la generazione random dei pesi
-n_splits = 10 #numero di kfold per la cross validation
-
+# neural network params
+batch_size = 32  # training cases batch
+num_epochs = 500  # max number of epochs
+num_classes = 3  # number of class in dataset
+seed = 42  # base random seed
+n_splits = 10  # number of kfold
 
 
 def _load_data_nn():
+    """
+    generate dataset based on data in dataset folder
+    :return: train and test dataset based on stratification strategy
+    """
     dataset = np.loadtxt(path_dataset, delimiter='\t')
 
     y = np.array(np.ceil(dataset[:, -1])).astype(np.str)
@@ -50,12 +53,19 @@ def _load_data_nn():
     return X_train, X_test, Y_train, Y_test
 
 
-def _evaluete_nn (X_train, X_test, Y_train, Y_test, vect_max=None):
+def _evaluete_nn(X_test, Y_test, best_model):
+    """
+    Evaluate best model after kfold training
+    :param X_test: example images to test best model after kfold
+    :param Y_test: labels matching truth to example
+    :param best_model: index which identify best model after kfold
+    :return: evaluation of best model trough dataset test and save it with loss and accuracy metrics
+    """
 
-    #CARICO IL MODELLO CON LA MIGLIORE ACCURANCY E VERIFICO L'ANDAMENTO SUI TEST CASES
+    # load best model and evaluate it with accuracy and loss
     print('Load best model and test it ')
-    model = load_model(path_best+'checkpoint-%d.h5' %(vect_max))
-    score = model.evaluate(X_test, Y_test, verbose=0) #valuto il modello
+    model = load_model(path_best+'checkpoint-%d.h5' %(best_model))
+    score = model.evaluate(X_test, Y_test, verbose=0)  # evaluate model
     print('Metrics => ', model.metrics_names, score)
     y_predict = np.asarray(model.predict(X_test, verbose=0))
     Y_predict = np.argmax(y_predict, axis=1)
@@ -67,11 +77,11 @@ def _evaluete_nn (X_train, X_test, Y_train, Y_test, vect_max=None):
     print("\nMetrics => ", model.metrics_names, score)
     print('\nClassification Report : ')
     print(classification_report(y_test, Y_predict, target_names=class_names))
-    #SALVO IL MODELLO APPENA TESTATO CON LOSS E ACCURANCY
+    # save model tested with loss and accuracy
     model.save(path_thebest+'model-'+'{:.4f}'.format(score[0])+'-'+'{:.4f}'.format(score[1])+'.h5')
 
 
-def _start_nn ():
+def _start_nn():
     print('STARTING FITTING NEURAL NETWORK')
     if os.path.exists(path_best):
         shutil.rmtree(path_best)
@@ -83,26 +93,29 @@ def _start_nn ():
 
     print('loading data .......')
 
-    #DEFINIZIONE DEL MODELLO PER LA NEURAL NETWORK
-    def baseline_model ():
-        model = Sequential()
-        model.add(Dense(5, activation='elu',  input_shape=(X_train.shape[1],)))
+    def baseline_model():
+        """
+        Definition of neural network base model
+        :return: model
+        """
+        base_model = Sequential()
+        base_model.add(Dense(5, activation='elu',  input_shape=(X_train.shape[1],)))
         #hidden
-        model.add(Dense(31, activation='elu'))
-        model.add(Dense(31, activation='elu'))
-        model.add(Dense(31, activation='elu'))
-        model.add(Dense(31, activation='elu'))
-        model.add(Dropout(0.3))
-        model.add(Dense(3, activation='softmax'))
-        model.compile(optimizer='adadelta', loss='binary_crossentropy', metrics=['accuracy'])
-        return model
+        base_model.add(Dense(31, activation='elu'))
+        base_model.add(Dense(31, activation='elu'))
+        base_model.add(Dense(31, activation='elu'))
+        base_model.add(Dense(31, activation='elu'))
+        base_model.add(Dropout(0.3))
+        base_model.add(Dense(3, activation='softmax'))
+        base_model.compile(optimizer='adadelta', loss='binary_crossentropy', metrics=['accuracy'])
+        return base_model
 
-    #GENERAZIONE DEGLI SPLIT PER L'ADDESTRAMENTO TRAMITE CROSS VALIDATION
+    # generation kfolds to cross validation process
     kfold = KFold(n_splits=n_splits, shuffle=True, random_state=seed)
     cvscores = []
     i = 0
 
-    #STARTING CROSS VALIDATION
+    # start cross validation
     for train, test in kfold.split(X_train, Y_train):
         model = baseline_model()
         model.fit(X_train[train], Y_train[train], epochs=num_epochs, batch_size=batch_size, verbose=0,
@@ -116,6 +129,6 @@ def _start_nn ():
         i += 1
     print("%.2f%% (+/- %.2f%%)" % (np.mean(cvscores), np.std(cvscores)))
 
-    #PASSO ALLA FUNZIONE DI VALUTAZIONE IL MODELLO CHE HA OTTENUTO L'ACCURANCY MIGLIORE TRA QUELLI GENERATI
-    vect_max = np.argmax(cvscores)
-    _evaluete_nn(X_train, X_test, Y_train, Y_test, vect_max)
+    # evaluate best model based on higher accuracy
+    vect_max = np.argmax(vect_max)
+    _evaluete_nn(X_test, Y_test, vect_max)

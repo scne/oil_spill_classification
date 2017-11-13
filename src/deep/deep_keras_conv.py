@@ -1,31 +1,33 @@
-#librerie standard
-import numpy as np
-import matplotlib.pyplot as plt
+# base libraries
 import os
-#librerie keras
-from keras.models import Model
-from keras.layers import Input, Convolution2D, MaxPooling2D, Dense, Dropout, Flatten
+
+import matplotlib.pyplot as plt
+import numpy as np
 from keras.callbacks import TensorBoard, EarlyStopping
+from keras.layers import Input, Convolution2D, MaxPooling2D, Dense, Dropout, Flatten
+# keras import
+from keras.models import Model
 from keras.models import load_model
 from keras.utils import np_utils
-#librerie sklearn
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, classification_report
-#funzioni
-from src.deep.create_dataset import _generate_dataset, _load_image, _plot_confusion_matrix
+# sklearn import
+from sklearn.model_selection import train_test_split
 
-#PATH PER IL SALVATAGGIO DEI DATI
-path_dataset = './deep/img_cluster' #PERCORSO DOVE SONO SALVATE LE IMMAGINI DI INPUT PER LA RETE
-path_model = './deep/model/'  #PERCORSO DOVE VIENE SALVATO IL MODELLO DOPO L'ADDESTRAMENTO DELLA RETE
+# utility function
+from src.deep.create_dataset import _generate_dataset, _load_image
 
-#PARAMETRI PER LA CONVOLUTIONAL DEEP NEURAL NETWORK
-batch_size = 64 #quantità di trainig cases elaborati per esecuzione
-num_epochs = 500 #numero massimo di epoche per la quale la rete può essere addestrata
-kernel_size = 3 #dimensione del kernel per l'operazione di convolusione della rete
-pool_size = 2 #dimensione dello strato di pooling per la rete
-seed = 42 #seme per la generazione random dei pesi
+# path to save files
+path_dataset = './deep/img_cluster'  # dataset path
+path_model = './deep/model/'  # path to save model
 
-#PARAMETRI DIMENSIONE IMMAGINI
+# convolutional network parmas
+batch_size = 64  # training cases batch
+num_epochs = 500  # max number of epochs
+kernel_size = 3  # kernel size dimension
+pool_size = 2  # max pooling size
+seed = 42  # base random seed
+
+# dataset image parameters
 height = 32
 width = 32
 depth = 1
@@ -43,7 +45,8 @@ def _load_data_cnn():
 
     return X_train, X_test, Y_train, Y_test
 
-def _evaluete_cnn(X_train, X_test, Y_train, Y_test):
+
+def _evaluete_cnn(X_test, Y_test):
 
     model = load_model(path_model+'model.h5')
 
@@ -104,5 +107,5 @@ def _start_cnn ():
     print("Saving model")
     model.save(path_model+'model.h5', overwrite=True)
     #PASSO ALLA FASE DI VALUTAZIONE DEL MODELLO SUI TEST CASES
-    _evaluete_cnn(X_train, X_test, Y_train, Y_test)
+    _evaluete_cnn(X_test, Y_test)
     print("The End")
