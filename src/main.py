@@ -60,28 +60,11 @@ def _print_menu_cnn():
         _start_cnn()
     elif a == '2':
         X_train, X_test, Y_train, Y_test = _load_data_cnn()
-        _evaluete_cnn(X_train, X_test, Y_train, Y_test)
+        _evaluete_cnn( X_test, Y_test)
         _print_menu()
     elif a == '3':
         _print_menu()
     _print_menu()
-
-
-# def _print_menu_uns():
-#     print('1 - Fit and Evaluete Unsupervised Network')
-#     print('2 - Evaluete Unsupervised Network')
-#     print('3 - back')
-#     print()
-#     a = input('> ')
-#     if a == '1':
-#         _start_uns()
-#     elif a == '2':
-#         X_train, X_test, Y_train, Y_test = _load_data_cnn()
-#         _evaluete_cnn(X_train, X_test, Y_train, Y_test)
-#         _print_menu()
-#     elif a == '3':
-#         _print_menu()
-#     _print_menu()
 
 
 def main():

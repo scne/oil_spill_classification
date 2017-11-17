@@ -1,7 +1,6 @@
 # standard libraries
 import os
 import shutil
-
 import numpy as np
 from keras.callbacks import TensorBoard, EarlyStopping, ModelCheckpoint
 from keras.layers import Dense, Dropout
@@ -26,7 +25,7 @@ num_epochs = 500  # max number of epochs
 num_classes = 3  # number of class in dataset
 seed = 42  # base random seed
 n_splits = 10  # number of kfold
-
+n_input_layer = 31
 
 def _load_data_nn():
     """
@@ -99,11 +98,14 @@ def _start_nn():
         :return: model
         """
         base_model = Sequential()
-        base_model.add(Dense(5, activation='elu',  input_shape=(X_train.shape[1],)))
+        base_model.add(Dense(n_input_layer, activation='elu',  input_shape=(X_train.shape[1],)))
         #hidden
         base_model.add(Dense(31, activation='elu'))
+        base_model.add(Dropout(0.1))
         base_model.add(Dense(31, activation='elu'))
+        base_model.add(Dropout(0.1))
         base_model.add(Dense(31, activation='elu'))
+        base_model.add(Dropout(0.1))
         base_model.add(Dense(31, activation='elu'))
         base_model.add(Dropout(0.3))
         base_model.add(Dense(3, activation='softmax'))
@@ -130,5 +132,5 @@ def _start_nn():
     print("%.2f%% (+/- %.2f%%)" % (np.mean(cvscores), np.std(cvscores)))
 
     # evaluate best model based on higher accuracy
-    vect_max = np.argmax(vect_max)
+    vect_max = np.argmax(cvscores)
     _evaluete_nn(X_test, Y_test, vect_max)
