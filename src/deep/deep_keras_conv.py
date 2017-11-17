@@ -7,8 +7,7 @@ import numpy.ma as ma
 from scipy import signal
 import skimage.measure
 import matplotlib.cm as cm
-# theano import
-from theano import *
+
 # keras import
 from keras import backend as K
 from keras.models import Sequential, Model
@@ -80,7 +79,7 @@ def nice_imshow(ax, data, vmin=None, vmax=None, cmap=None):
     plt.colorbar(im, cax=cax)
 
 
-def _load_data_cnn():
+def load_data_cnn():
 
     filenames, labels = _generate_dataset(path_dataset)
     x_train, x_test, y_train, y_test = train_test_split(filenames, labels, test_size=0.30, random_state=seed, stratify=labels)
@@ -93,7 +92,7 @@ def _load_data_cnn():
     return X_train, X_test, Y_train, Y_test
 
 
-def _evaluete_cnn(X_test, Y_test):
+def evaluete_cnn(X_test, Y_test):
 
     model = load_model(path_model+'model.h5')
 
@@ -118,7 +117,7 @@ def _evaluete_cnn(X_test, Y_test):
 
 
 
-def _start_cnn ():
+def start_cnn ():
     print('STARTING FITTING CONVOLUTIONAL DEEP NEURAL NETWORK')
     if not os.path.exists(path_model):
         os.mkdir(path_model)
@@ -126,7 +125,7 @@ def _start_cnn ():
         shutil.rmtree(path_board)
     os.mkdir(path_board)
 
-    X_train, X_test, Y_train, Y_test = _load_data_cnn()
+    X_train, X_test, Y_train, Y_test = load_data_cnn()
     print('loading data .......')
     #DEFINIZIONE DEL MODELLO DELLA CONVOLUTIONAL DEEP NEURAL NETWORK
     # inp = Input(shape=(height, width, depth))
@@ -203,7 +202,7 @@ def _start_cnn ():
     model.save(path_model+'model.h5', overwrite=True)
 
     #PASSO ALLA FASE DI VALUTAZIONE DEL MODELLO SUI TEST CASES
-    _evaluete_cnn(X_test, Y_test)
+    evaluete_cnn(X_test, Y_test)
 
 
     # Visualize the first layer of convolutions on an input image

@@ -89,7 +89,7 @@ def _load_data_uns():
     return X_train, Y_train, filenames
 
 
-def _start_uns():
+def start_uns():
     print('STARTING FITTING UNSUPERVISED NEURAL NETWORK')
     if not os.path.exists(path_model):
         os.mkdir(path_model)

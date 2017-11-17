@@ -27,7 +27,7 @@ seed = 42  # base random seed
 n_splits = 10  # number of kfold
 n_input_layer = 31
 
-def _load_data_nn():
+def load_data_nn():
     """
     generate dataset based on data in dataset folder
     :return: train and test dataset based on stratification strategy
@@ -52,7 +52,7 @@ def _load_data_nn():
     return X_train, X_test, Y_train, Y_test
 
 
-def _evaluete_nn(X_test, Y_test, best_model):
+def evaluete_nn(X_test, Y_test, best_model):
     """
     Evaluate best model after kfold training
     :param X_test: example images to test best model after kfold
@@ -80,7 +80,7 @@ def _evaluete_nn(X_test, Y_test, best_model):
     model.save(path_thebest+'model-'+'{:.4f}'.format(score[0])+'-'+'{:.4f}'.format(score[1])+'.h5')
 
 
-def _start_nn():
+def start_nn():
     print('STARTING FITTING NEURAL NETWORK')
     if os.path.exists(path_best):
         shutil.rmtree(path_best)
@@ -88,7 +88,7 @@ def _start_nn():
     if not os.path.exists(path_thebest):
         os.mkdir(path_thebest)
 
-    X_train, X_test, Y_train, Y_test = _load_data_nn()
+    X_train, X_test, Y_train, Y_test = load_data_nn()
 
     print('loading data .......')
 
@@ -133,4 +133,4 @@ def _start_nn():
 
     # evaluate best model based on higher accuracy
     vect_max = np.argmax(cvscores)
-    _evaluete_nn(X_test, Y_test, vect_max)
+    evaluete_nn(X_test, Y_test, vect_max)
