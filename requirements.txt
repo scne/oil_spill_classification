@@ -1,10 +1,11 @@
-bleach==2.1.1
+bleach==1.5.0
 cycler==0.10.0
 decorator==4.1.2
 Django==1.11.7
 entrypoints==0.2.3
+enum34==1.1.6
 h5py==2.7.1
-html5lib==1.0b10
+html5lib==0.9999999
 image==1.5.16
 imageio==2.2.0
 ipykernel==4.6.1
@@ -22,7 +23,10 @@ Keras==2.0.9
 keras-vis==0.4.1
 Markdown==2.6.9
 MarkupSafe==1.0
+matlab-kernel==0.15.0
+matlabengineforpython===R2016b
 matplotlib==2.1.0
+metakernel==0.20.12
 mistune==0.8.1
 mpmath==1.0.0
 nbconvert==5.3.1
@@ -55,8 +59,8 @@ simplegeneric==0.8.1
 six==1.11.0
 sklearn==0.0
 sympy==1.1.1
-tensorflow==1.3.0
-tensorflow-tensorboard==0.1.8
+tensorflow==1.4.0
+tensorflow-tensorboard==0.4.0rc3
 terminado==0.6
 testpath==0.3.1
 tornado==4.5.2
