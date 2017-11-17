@@ -171,3 +171,4 @@ venv.bak/
 /src/uns_deep/model/
 /src/uns_deep/img_cluster/
 /src/uns_deep/crop_r/
+/src/uns_deep/img_cluster_gmm/
