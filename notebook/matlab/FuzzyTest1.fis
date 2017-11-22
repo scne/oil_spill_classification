@@ -1,0 +1,63 @@
+[System]
+Name='FuzzyTest1'
+Type='mamdani'
+Version=2.0
+NumInputs=5
+NumOutputs=1
+NumRules=2
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Compl'
+Range=[-4 9]
+NumMFs=3
+MF1='compl2':'trimf',[-1.266 -0.038 8.086]
+MF2='compl3':'trimf',[-1.187 0.2764 8.1046]
+MF3='compl4':'trimf',[-0.9429 0.5835 8.2074]
+
+[Input2]
+Name='FF'
+Range=[-4 10]
+NumMFs=3
+MF1='FF2':'trimf',[-1.869 0.0603 9.78]
+MF2='FF3':'trimf',[-1.8692 -0.4651 2.0715]
+MF3='FF4':'trimf',[-1.8692 -1.322 1.8501]
+
+[Input3]
+Name='RBSDO'
+Range=[-4 10]
+NumMFs=3
+MF1='mf1':'trimf',[-3.759 -0.0079 1.7331]
+MF2='mf2':'trimf',[-3.557 0.646 1.5497]
+MF3='mf3':'trimf',[-3.558 0.2926 1.3963]
+
+[Input4]
+Name='Energy'
+Range=[-4 10]
+NumMFs=3
+MF1='mf1':'trimf',[-3.834 -0.0605 3.2249]
+MF2='mf2':'trimf',[-2.722 0.3841 2.6047]
+MF3='mf3':'trimf',[-0.7015 1.1566 2.587]
+
+[Input5]
+Name='Entropy'
+Range=[-4 10]
+NumMFs=3
+MF1='mf1':'trimf',[-2.509 -0.0168 4.2905]
+MF2='mf2':'trimf',[-2.023 0.7147 3.9863]
+MF3='mf3':'trimf',[-2.406 -0.8356 1.9632]
+
+[Output1]
+Name='output'
+Range=[2 4]
+NumMFs=2
+MF1='mf1':'trimf',[2 2 2.5]
+MF2='mf3':'trimf',[3.5 4 4]
+
+[Rules]
+1 1 1 1 1, 1 (1) : 1
+3 3 3 3 3, 2 (1) : 1
