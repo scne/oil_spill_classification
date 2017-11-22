@@ -5,13 +5,13 @@ import shutil
 import numpy as np
 from keras.callbacks import TensorBoard, EarlyStopping
 # keras libraries
-from keras.layers import Input, Dense, Dropout
-from keras.models import Model
+from keras.layers import Input, Dense, Dropout, Activation
+from keras.models import Model, Sequential
 from scipy.misc import imsave
 # sklearn libraries
 from sklearn.cluster import KMeans
 from sklearn.metrics import confusion_matrix, classification_report
-
+from sklearn import mixture
 # utility functions
 from src.deep.create_dataset import _generate_dataset, _load_image
 
@@ -19,11 +19,12 @@ from src.deep.create_dataset import _generate_dataset, _load_image
 path_dataset = './uns_deep/crop_r'  # dataset base path
 path_img_out = './uns_deep/img_cluster'  # path to save clustered images
 path_model = './uns_deep/model/'  # path to save autoencoder model
+path_board = './uns_deep/tensorboard/'
 
 # unsupervised neural network params
-batch_size = 16  # training cases batch
+batch_size = 32  # training cases batch
 num_epochs = 500  # max number of epochs
-out_encoder = 3  # output of autoencoder
+out_encoder = 4  # number of neuron of encoder layer
 seed = 42   # base random seed
 
 # dataset image parameters
@@ -88,42 +89,60 @@ def _load_data_uns():
     return X_train, Y_train, filenames
 
 
-def _start_uns():
+def start_uns():
     print('STARTING FITTING UNSUPERVISED NEURAL NETWORK')
     if not os.path.exists(path_model):
         os.mkdir(path_model)
+    if os.path.exists(path_board):
+        shutil.rmtree(path_board)
+        os.mkdir(path_board)
     X_train, Y_train, filenames= _load_data_uns()
     print('loading data .........')
     num_classes = np.unique(Y_train).shape[0]
 
     # unsupervised neural network base model
-    input_img = Input(shape=(height*width,))
-    encoded = Dense(9, activation='sigmoid')(input_img)
-    # encoded = Dense(9, activation='sigmoid')(encoded)
-    # encoded = Dropout(0.5)(encoded)
-    encoded = Dense(out_encoder, activation='sigmoid')(encoded)
-    # decoded = Dense(9, activation='sigmoid')(encoded)
-    decoded = Dense(9, activation='sigmoid')(encoded)
-    decoded = Dropout(0.5)(decoded)
-    decoded = Dense(height*width, activation='sigmoid')(encoded)
+    # input_img = Input(shape=(height*width,))
+    # # encoded = Dense(9, activation='sigmoid')(input_img)
+    # # encoded = Dense(9, activation='sigmoid')(encoded)
+    # # encoded = Dropout(0.5)(encoded)
+    # encoded = Dense(out_encoder, activation='sigmoid')(input_img)
+    # # decoded = Dense(9, activation='sigmoid')(encoded)
+    # # decoded = Dense(9, activation='sigmoid')(encoded)
+    # # decoded = Dropout(0.5)(decoded)
+    # decoded = Dense(height*width, activation='sigmoid')(encoded)
+
+    autoencoder = Sequential()
+    # autoencoder.add(Dense(1024, activation='sigmoid', input_shape=(height*width,)))
+    # autoencoder.add(Dropout(0.1))
+    autoencoder.add(Dense(8, activation='sigmoid', input_shape=(height*width,)))
+    autoencoder.add(Dense(out_encoder))
+    out_e = Activation('sigmoid')  # output encoder
+    autoencoder.add(out_e)
+    autoencoder.add(Dense(8, activation='sigmoid'))
+    autoencoder.add(Dropout(0.5, seed=seed))
+    autoencoder.add(Dense(height*width, activation='sigmoid'))
 
     # model generation
-    autoencoder = Model(input_img, decoded)
+    # autoencoder = Model(input_img, decoded)
     autoencoder.compile(optimizer='adadelta', loss='binary_crossentropy')
-    encoder = Model(input_img, encoded)
+    # encoder = Model(input_img, encoded)
+    encoder = Model(autoencoder.input, out_e.output)
     # print(autoencoder.summary())
 
     # reshape input
     X_train_r = np.asarray(X_train).reshape(-1, height*width)
-
+    # print(X_train.shape[0])
+    # batch_size=1
     # start fitting process
     autoencoder.fit(X_train_r, X_train_r,
                     epochs=num_epochs,
                     batch_size=batch_size,
                     shuffle=True,
                     validation_split=0.1,
-                    callbacks=[TensorBoard(log_dir='./uns_deep/tensorboard'),
-                               EarlyStopping(monitor='loss', min_delta=0.01, patience=10,
+                    verbose=2,
+                    callbacks=[TensorBoard(log_dir='./uns_deep/tensorboard', histogram_freq=1, write_images=True,
+                                           write_grads=True),
+                               EarlyStopping(monitor='val_loss', min_delta=0.001, patience=3,
                                              verbose=0, mode='auto')]
     )
 
@@ -132,8 +151,13 @@ def _start_uns():
     encoded_img = encoder.predict(X_train_r)
 
     kmeans_all = KMeans(n_clusters=num_classes, init='k-means++', random_state=seed)\
-        .fit_predict(np.asarray(encoded_img).reshape(-1, 3))
+        .fit_predict(np.asarray(encoded_img).reshape(-1, out_encoder))
     unique_all, counts_all = np.unique(kmeans_all, return_counts=True)
+
+    gmm = mixture.GaussianMixture(n_components=3, covariance_type='full').fit(np.asarray(encoded_img).reshape(-1, out_encoder))
+    class_gmm = gmm.predict(np.asarray(encoded_img).reshape(-1, out_encoder))
+    unique_gmm, counts_gmm = np.unique(class_gmm, return_counts=True)
+    print('\nGMM Count : ', counts_gmm)
 
     order_class = np.sort(counts_all)[::-1]
     ordered_v = np.empty(shape=kmeans_all.shape)
@@ -148,6 +172,10 @@ def _start_uns():
     unique_ord, counts_ord = np.unique(ordered_v, return_counts=True)
     _save_clustering(X=X_train_r, kmeans=ordered_v, path=path_img_out, filenames=filenames,
                      predict=True)
+
+    _save_clustering(X=X_train_r, kmeans=class_gmm, path=path_img_out+'_gmm', filenames=filenames,
+                     predict=True)
+
     print('\nOrdered Count : ', counts_ord)
 
     confmatrix = confusion_matrix(Y_train, ordered_v)

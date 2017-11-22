@@ -7,7 +7,7 @@ from math import sqrt
 class Network:
     def __init__(self, train_batch_size, test_batch_size, pooling_scale,
                  dropout_rate, base_learning_rate, decay_rate,
-                 optimizeMethod='adam', save_path='./model/default.ckpt'):
+                 optimizeMethod='adadelta', save_path='./model/default.ckpt'):
         self.optimizeMethod = optimizeMethod
         self.dropout_rate = dropout_rate
         self.base_learning_rate = base_learning_rate
@@ -96,7 +96,7 @@ class Network:
                         data_flow = data_flow + biases
                         if not train:
                             self.visualize_filter_map(data_flow, how_many=config['out_depth'],
-                                                      display_size=32 // (i // 2 + 1), name=config['name'] + '_conv')
+                                                      display_size=32 // (i + 1), name=config['name'] + '_conv')
                         else:
                             if i == 0:
                                 # save kernel image
@@ -107,9 +107,14 @@ class Network:
                         data_flow = tf.nn.relu(data_flow)
                         if not train:
                             self.visualize_filter_map(data_flow, how_many=config['out_depth'],
-                                                      display_size=32 // (i // 2 + 1), name=config['name'] + '_relu')
+                                                      display_size=32 // (i + 1), name=config['name'] + '_relu')
+                    elif config['activation'] == 'elu':
+                        data_flow = tf.nn.elu(data_flow)
+                        if not train:
+                            self.visualize_filter_map(data_flow, how_many=config['out_depth'],
+                                                      display_size=32 // (i + 1), name=config['name'] + '_elu')
                     else:
-                        raise Exception('Activation Func can only be Relu right now. You passed', config['activation'])
+                        raise Exception('Activation Func can only be Relu or Elu right now. You passed', config['activation'])
                     if config['pooling']:
                         data_flow = tf.nn.max_pool(
                             data_flow,
@@ -118,8 +123,9 @@ class Network:
                             padding='SAME')
                         if not train:
                             self.visualize_filter_map(data_flow, how_many=config['out_depth'],
-                                                      display_size=32 // (i // 2 + 1) // 2,
+                                                      display_size=32 // (i + 1) // 2,
                                                       name=config['name'] + '_pooling')
+                    data_flow = tf.nn.dropout(data_flow, 0.75, seed=4926)
 
             # Define Fully Connected Layers
             for i, (weights, biases, config) in enumerate(zip(self.fc_weights, self.fc_biases, self.fc_config)):
@@ -130,12 +136,16 @@ class Network:
 
                     ### Dropout
                     if train and i == len(self.fc_weights) - 1:
-                        data_flow = tf.nn.dropout(data_flow, self.dropout_rate, seed=4926)
+                        data_flow = tf.nn.dropout(data_flow, 0.6, seed=4926)
                     ###
 
                     data_flow = tf.matmul(data_flow, weights) + biases
                     if config['activation'] == 'relu':
                         data_flow = tf.nn.relu(data_flow)
+                    elif config['activation'] == 'elu':
+                        data_flow = tf.nn.elu(data_flow)
+                    elif config['activation'] == 'softmax':
+                        data_flow = tf.nn.softmax(data_flow)
                     elif config['activation'] is None:
                         pass
                     else:
@@ -146,7 +156,8 @@ class Network:
         # Training computation.
         logits = model(self.tf_train_samples)
         with tf.name_scope('loss'):
-            self.loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=self.tf_train_labels))
+            self.loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits,
+                                                                               labels=self.tf_train_labels))
             self.loss += self.apply_regularization(_lambda=5e-4)
             self.train_summaries.append(tf.summary.scalar('Loss', self.loss))
 
@@ -173,6 +184,10 @@ class Network:
             elif (self.optimizeMethod == 'adam'):
                 self.optimizer = tf.train \
                     .AdamOptimizer(learning_rate) \
+                    .minimize(self.loss)
+            elif (self.optimizeMethod == 'adadelta'):
+                self.optimizer = tf.train \
+                    .AdadeltaOptimizer(learning_rate=learning_rate) \
                     .minimize(self.loss)
 
         # Predictions for the training, validation, and test data.

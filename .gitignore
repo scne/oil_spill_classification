@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-# Created by .ignore support plugin (hsz.mobi)
-### JetBrains template
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-
 # User-specific stuff:
 .idea/**
 
@@ -42,9 +36,6 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
-=======
->>>>>>> cfde43e172e6215cab5119c71ee8afdfa7db0cc3
-### Python template
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -56,7 +47,6 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
-*.png
 *.h5
 
 # Distribution / packaging
@@ -171,3 +161,6 @@ venv.bak/
 /src/uns_deep/model/
 /src/uns_deep/img_cluster/
 /src/uns_deep/crop_r/
+/src/uns_deep/img_cluster_gmm/
+/src/deep/board_old/
+/src/deep/model_tensor/

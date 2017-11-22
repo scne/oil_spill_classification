@@ -1,7 +1,6 @@
 # standard libraries
 import os
 import shutil
-
 import numpy as np
 from keras.callbacks import TensorBoard, EarlyStopping, ModelCheckpoint
 from keras.layers import Dense, Dropout
@@ -26,9 +25,9 @@ num_epochs = 500  # max number of epochs
 num_classes = 3  # number of class in dataset
 seed = 42  # base random seed
 n_splits = 10  # number of kfold
+n_input_layer = 31
 
-
-def _load_data_nn():
+def load_data_nn():
     """
     generate dataset based on data in dataset folder
     :return: train and test dataset based on stratification strategy
@@ -53,7 +52,7 @@ def _load_data_nn():
     return X_train, X_test, Y_train, Y_test
 
 
-def _evaluete_nn(X_test, Y_test, best_model):
+def evaluete_nn(X_test, Y_test, best_model):
     """
     Evaluate best model after kfold training
     :param X_test: example images to test best model after kfold
@@ -81,7 +80,7 @@ def _evaluete_nn(X_test, Y_test, best_model):
     model.save(path_thebest+'model-'+'{:.4f}'.format(score[0])+'-'+'{:.4f}'.format(score[1])+'.h5')
 
 
-def _start_nn():
+def start_nn():
     print('STARTING FITTING NEURAL NETWORK')
     if os.path.exists(path_best):
         shutil.rmtree(path_best)
@@ -89,7 +88,7 @@ def _start_nn():
     if not os.path.exists(path_thebest):
         os.mkdir(path_thebest)
 
-    X_train, X_test, Y_train, Y_test = _load_data_nn()
+    X_train, X_test, Y_train, Y_test = load_data_nn()
 
     print('loading data .......')
 
@@ -99,11 +98,14 @@ def _start_nn():
         :return: model
         """
         base_model = Sequential()
-        base_model.add(Dense(5, activation='elu',  input_shape=(X_train.shape[1],)))
+        base_model.add(Dense(n_input_layer, activation='elu',  input_shape=(X_train.shape[1],)))
         #hidden
         base_model.add(Dense(31, activation='elu'))
+        base_model.add(Dropout(0.1))
         base_model.add(Dense(31, activation='elu'))
+        base_model.add(Dropout(0.1))
         base_model.add(Dense(31, activation='elu'))
+        base_model.add(Dropout(0.1))
         base_model.add(Dense(31, activation='elu'))
         base_model.add(Dropout(0.3))
         base_model.add(Dense(3, activation='softmax'))
@@ -130,5 +132,5 @@ def _start_nn():
     print("%.2f%% (+/- %.2f%%)" % (np.mean(cvscores), np.std(cvscores)))
 
     # evaluate best model based on higher accuracy
-    vect_max = np.argmax(vect_max)
-    _evaluete_nn(X_test, Y_test, vect_max)
+    vect_max = np.argmax(cvscores)
+    evaluete_nn(X_test, Y_test, vect_max)
