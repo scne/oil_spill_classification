@@ -164,3 +164,6 @@ venv.bak/
 /src/uns_deep/img_cluster_gmm/
 /src/deep/board_old/
 /src/deep/model_tensor/
+/notebook/neural_network/dataset/
+/notebook/neural_network/best_model/
+/notebook/neural_network/thebetter_model/
