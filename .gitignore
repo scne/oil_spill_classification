@@ -168,3 +168,13 @@ venv.bak/
 /notebook/neural_network/best_model/
 /notebook/neural_network/thebetter_model/
 /notebook-extensions/
+/notebook/neural_network/img_cluster/
+/notebook/neural_network/crop_r/
+/notebook/neural_network/nn/
+/notebook/neural_network/img_cluster_uns/
+/notebook/neural_network/crop_r_uns/
+/notebook/neural_network/deep/
+/notebook/neural_network/tensorboard/
+/notebook/neural_network/uns_deep/
+/notebook/neural_network/model/
+/notebook/neural_network/model_uns/
