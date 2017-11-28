@@ -169,3 +169,6 @@ venv.bak/
 /notebook/neural_network/thebetter_model/
 /notebook-extensions/
 /notebook/matlab/Dataset/
+/dataset/
+/notebook/matlab/dataset/
+/notebook/matlab/crop/
